@@ -3,7 +3,7 @@ api_version: 1
 env: flex
 
 env_variables:
-	API_KEY: ae4a416a45e504cca20e0d91165158b0f8e70566
+API_KEY: ae4a416a45e504cca20e0d91165158b0f8e70566
 
 manual_scaling:
 	instances: 2
