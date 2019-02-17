@@ -1,0 +1,20 @@
+@import '../../../@theme/styles/themes';
+
+@include nb-install-component() {
+  hacksquad-chartjs-pie,
+  hacksquad-chartjs-bar,
+  hacksquad-chartjs-line,
+  hacksquad-chartjs-multiple-xaxis,
+  hacksquad-chartjs-bar-horizontal,
+  hacksquad-chartjs-radar {
+    display: block;
+    height: nb-theme(card-height-medium);
+    width: 100%;
+
+    /deep/ chart {
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

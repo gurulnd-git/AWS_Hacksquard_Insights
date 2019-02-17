@@ -1,0 +1,17 @@
+<nb-card size="large">
+  <nb-tabset fullWidth>
+    <nb-tab tabTitle="Road Accident Summary">
+      <div class="chart-container">
+
+        <hacksquad-multiple-xaxis style="margin-top : 10px"></hacksquad-multiple-xaxis>
+      </div>
+    </nb-tab>
+    <nb-tab tabTitle="Comparision of top states" [lazyLoad]="true">
+      <div class="chart-container">
+        <hacksquad-chart-panel-header [type]="period">
+        </hacksquad-chart-panel-header>
+        <hacksquad-comparision-chart ></hacksquad-comparision-chart>
+      </div>
+    </nb-tab>
+  </nb-tabset>
+</nb-card>

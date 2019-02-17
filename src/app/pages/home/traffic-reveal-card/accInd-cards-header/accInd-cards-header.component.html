@@ -1,0 +1,11 @@
+<nb-card-header>
+  <span>ACCIDENTS IN INDIA</span>
+  <div class="dropdown ghost-dropdown" ngbDropdown>
+     
+    <ul ngbDropdownMenu class="dropdown-menu">
+      <li class="dropdown-item" *ngFor="let period of types" (click)="changePeriod(period)">
+        {{ period }}
+      </li>
+    </ul>
+  </div>
+</nb-card-header>

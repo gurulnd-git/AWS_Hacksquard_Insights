@@ -1,0 +1,13 @@
+<div class="chart-header">
+  <hacksquad-legend-chart [legendItems]="chartLegend"></hacksquad-legend-chart>
+
+  <div class="dropdown"
+       [ngClass]="{ 'ghost-dropdown': currentTheme === 'corporate' }"
+       ngbDropdown>
+    <ul class="dropdown-menu" ngbDropdownMenu>
+      <li class="dropdown-item" *ngFor="let period of types" (click)="changePeriod(period)">
+        {{ period }}
+      </li>
+    </ul>
+  </div>
+</div>

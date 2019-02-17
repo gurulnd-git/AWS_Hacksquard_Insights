@@ -1,0 +1,91 @@
+
+<div class="row" >
+
+    <div class="col-xxl-3">
+
+    <nb-card size="medium">
+
+      <nb-card-body >
+          <div><b>NUMBER OF ACCIDENTS</b></div>
+        <div class="progress-info" *ngFor="let item of progressInfoData">
+          <div class="title">{{ item.title }}</div>
+          <div class="value">{{ item.value | ngxNumberWithCommas }}</div>
+
+          <nb-progress-bar [value]="item.activeProgress"></nb-progress-bar>
+          {{item.activeProgress}}%
+          <div class="description">
+            <bdi>{{ item.description }}</bdi>
+          </div>
+        </div>
+      </nb-card-body>
+    </nb-card>
+    </div>
+
+        <div class="col-xxl-3" >
+
+            <nb-card size="medium">
+
+              <nb-card-body>
+                  <div><b>NUMBER OF PERSONS KILLED IN ACCIDENT</b></div>
+                <div class="progress-info" *ngFor="let itemKilled of progressKilledData">
+                  <div class="title">{{ itemKilled.title }}</div>
+                  <div class="value">{{ itemKilled.value | ngxNumberWithCommas }}</div>
+                  <nb-progress-bar [value]="itemKilled.activeProgress"></nb-progress-bar>
+                  {{itemKilled.activeProgress}}%
+                  <div class="description">
+                    <bdi>{{ itemKilled.description }}</bdi>
+                  </div>
+                </div>
+              </nb-card-body>
+            </nb-card>
+            </div>
+
+            <div class="col-xxl-3">
+
+                <nb-card size="medium">
+
+                  <nb-card-body>
+                      <div><b>NUMBER OF PERSONS INJURED IN ACCIDENT</b></div>
+                    <div class="progress-info" *ngFor="let itemInjured of progressInjuredData">
+                      <div class="title">{{ itemInjured.title }}</div>
+                      <div class="value">{{ itemInjured.value | ngxNumberWithCommas }}</div>
+                      <nb-progress-bar [value]="itemInjured.activeProgress"></nb-progress-bar>
+                      {{itemInjured.activeProgress}}%
+                      <div class="description">
+                        <bdi>{{ itemInjured.description}}</bdi>
+                      </div>
+                    </div>
+                  </nb-card-body>
+                </nb-card>
+                </div>
+
+    <!-- <div class="col-xxl-3">
+        <nb-card size="medium">
+          <nb-card-body>
+            <div class="progress-info" *ngFor="let item of arrayOfData.progressInfoDataForKilled">
+              <div class="title">{{ item.title }}</div>
+              <div class="value">{{ item.value | ngxNumberWithCommas }}</div>
+              <nb-progress-bar [value]="item.activeProgress"></nb-progress-bar>
+              <div class="description">
+                <bdi>{{ item.description }}</bdi>
+              </div>
+            </div>
+          </nb-card-body>
+        </nb-card>
+        </div> -->
+
+        <!-- <div class="col-xxl-3">
+            <nb-card size="medium">
+              <nb-card-body>
+                <div class="progress-info" *ngFor="let item of arrayOfData.progressInfoDataForInjures">
+                  <div class="title">{{ item.title }}</div>
+                  <div class="value">{{ item.value | ngxNumberWithCommas }}</div>
+                  <nb-progress-bar [value]="item.activeProgress"></nb-progress-bar>
+                  <div class="description">
+                    <bdi>{{ item.description }}</bdi>
+                  </div>
+                </div>
+              </nb-card-body>
+            </nb-card>
+            </div> -->
+          </div>

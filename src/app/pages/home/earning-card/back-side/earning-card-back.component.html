@@ -1,0 +1,14 @@
+<nb-card-header>
+    National Highway Vs State Highway (In 2015)
+  </nb-card-header>
+  <nb-card-body>
+    <div class="chart-info">
+      <div class="title" [style.color]="color">{{ name }}</div>
+      <div class="time-period">Number of Road Accidents In 2015</div>
+      <div class="value">{{ value }}</div>
+    </div>
+  <hacksquad-earning-pie-chart [values]="earningPieChartData"
+                         (selectPie)="changeChartInfo($event)"
+                         [defaultSelectedCurrency]="defaultSelectedCurrency">
+  </hacksquad-earning-pie-chart>
+</nb-card-body>

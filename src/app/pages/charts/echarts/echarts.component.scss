@@ -1,0 +1,20 @@
+@import '../../../@theme/styles/themes';
+
+@include nb-install-component() {
+  hacksquad-echarts-pie,
+  hacksquad-echarts-bar,
+  hacksquad-echarts-line,
+  hacksquad-multiple-xaxis,
+  hacksquad-echarts-area-stack,
+  hacksquad-echarts-bar-animation,
+  hacksquad-echarts-radar {
+    display: block;
+    height: nb-theme(card-height-medium);
+    width: 100%;
+  }
+
+  /deep/ .echart {
+    height: 100%;
+    width: 100%;
+  }
+}

@@ -1,0 +1,18 @@
+<nb-reveal-card [showToggleButton]="false" [revealed]="revealed">
+  <nb-card-front>
+    <nb-card size="small">
+      <hacksquad-accind-cards-header [type]="period"></hacksquad-accind-cards-header>
+      <hacksquad-accind-front-card [frontCardData]="trafficListData"></hacksquad-accind-front-card>
+      <i class="nb-arrow-up" (click)="toggleView()">Toggle</i>
+    </nb-card>
+  </nb-card-front>
+  <nb-card-back>
+    <nb-card size="small">
+      <hacksquad-accind-cards-header [type]="period"></hacksquad-accind-cards-header>
+      <hacksquad-accind-back-card ></hacksquad-accind-back-card>
+      <i class="nb-arrow-down" (click)="toggleView()">Toggle</i>
+    </nb-card>
+  </nb-card-back>
+</nb-reveal-card>
+
+
