@@ -1,0 +1,18 @@
+runtime: nodejs
+api_version: 1
+env: flex
+
+env_variables:
+	API_KEY: ae4a416a45e504cca20e0d91165158b0f8e70566
+
+manual_scaling:
+	instances: 2
+	
+url: /(.+)
+static_files: dist/\1
+upload: dist/(.*)
+
+url: /
+static_files: dist/index.html
+upload: dist/index.html
+
